@@ -1,0 +1,77 @@
+body {
+            font-family: georgia ;
+            background: linear-gradient(135deg, #0d0d24, #2a2a48);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            max-width: 500px;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 255, 255, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        .option:hover {
+            background: rgba(0, 255, 255, 0.3);
+            border-color: cyan;
+            transform: scale(1.05);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #00eaff, #0077ff);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s ease;
+            box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #0077ff, #0056b3);
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+        }
+
+        #total-score {
+            font-size: 22px;
+            font-weight: bold;
+            color: cyan;
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 10px;
+}
+h2 {
+            color:yellow;
+}
