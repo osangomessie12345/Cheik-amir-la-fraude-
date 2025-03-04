@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" >
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Quiz sur cheik la fraude</title>
+
+</head>
+<body>
+
+<h1 data-aos="fade-down">Quiz</h1>
+
+    <div id="quiz-container">
+        <!-- Les 10 questions -->
+        <div class="container" data-aos="fade-up">
+            <h2>1. définis cheik amir </h2>
+            <form id="quizForm1">
+                <label class="option"><input type="radio" name="reponse1" value="Paris"> une fraude </label>
+                <label class="option"><input type="radio" name="reponse1" value="Londres"> un génie</label>
+                <label class="option"><input type="radio" name="reponse1" value="Berlin"> un intellectuel</label>
+                <button type="button" onclick="verifierReponse('quizForm1', 'score1', 'Paris')">Valider</button>
+            </form>
+            <div id="score1" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>2. QUEL est le comportement de cheik amir ?</h2>
+            <form id="quizForm2">
+    
+                <label class="option"><input type="radio" name="reponse2" value="Atlantique"> cool</label>
+                            <label class="option"><input type="radio" name="reponse2" value="Pacifique"> hypocrisie et tromperie</label>
+                <label class="option"><input type="radio" name="reponse2" value="Indien"> génial</label>
+                <button type="button" onclick="verifierReponse('quizForm2', 'score2', 'Pacifique')">Valider</button>
+            </form>
+            <div id="score2" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>3. Quel est le niveau mental de cheik amir</h2>
+            <form id="quizForm3">
+                <label class="option"><input type="radio" name="reponse3" value="Mercure"> relativement bas</label>
+                <label class="option"><input type="radio" name="reponse3" value="Vénus"> absolu</label>
+                <label class="option"><input type="radio" name="reponse3" value="Mars"> élevé</label>
+                <button type="button" onclick="verifierReponse('quizForm3', 'score3', 'Mercure')">Valider</button>
+            </form>
+            <div id="score3" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>4. comment cheik amir crée des sites web ?</h2>
+            <form id="quizForm4">
+
+                <label class="option"><input type="radio" name="reponse4" value="Lion"> en achetant</label>
+                <label class="option"><input type="radio" name="reponse4" value="Éléphant"> en codant</label>
+                                <label class="option"><input type="radio" name="reponse4" value="Guépard">utilise IA et WordPress,etc...</label>
+                <button type="button" onclick="verifierReponse('quizForm4', 'score4', 'Guépard')">Valider</button>
+            </form>
+            <div id="score4" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>5. comment cheik amir ment au public </h2>
+            <form id="quizForm5">
+                <label class="option"><input type="radio" name="reponse5" value="Tokyo"> toutes les réponses sont bonnes </label>
+                <label class="option"><input type="radio" name="reponse5" value="New York"> en disant qu'il est codeur</label>
+                <label class="option"><input type="radio" name="reponse5" value="Shanghai"> en disant qu'il est développeur web</label>
+                <button type="button" onclick="verifierReponse('quizForm5', 'score5', 'Tokyo')">Valider</button>
+            </form>
+            <div id="score5" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>6. est-ce que cheik amir connait quelque chose d'important ?</h2>
+            <form id="quizForm6">
+
+                <label class="option"><input type="radio" name="reponse6" value="Canada"> il connaît programmer</label>
+                                <label class="option"><input type="radio" name="reponse6" value="Russie"> il ne connait rien</label>
+                <label class="option"><input type="radio" name="reponse6" value="Chine"> il est brillant en informatique</label>
+                <button type="button" onclick="verifierReponse('quizForm6', 'score6', 'Russie')">Valider</button>
+            </form>
+            <div id="score6" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2> 7. qu'est-ce qui fait que cheik amir raconte qu'il connait tout ça ?</h2>
+            <form id="quizForm7">
+                <label class="option"><input type="radio" name="reponse7" value="1969"> la honte</label>
+                <label class="option"><input type="radio" name="reponse7" value="1979"> la stupidité</label>
+                <label class="option"><input type="radio" name="reponse7" value="1989"> le courage</label>
+                <button type="button" onclick="verifierReponse('quizForm7', 'score7', '1969')">Valider</button>
+            </form>
+            <div id="score7" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>8. Quel est la phrase la plus bête que cheik amir ait dit</h2>
+            <form id="quizForm8">
+                <label class="option"><input type="radio" name="reponse8" value="384 400 km"> qu'il code en Mandarin</label>
+                <label class="option"><input type="radio" name="reponse8" value="400 000 km"> qu'il est meilleur codeur que messie</label>
+                <label class="option"><input type="radio" name="reponse8" value="300 000 km"> qu'il peut tout faire sans IA</label>
+                <button type="button" onclick="verifierReponse('quizForm8', 'score8', '384 400 km')">Valider</button>
+            </form>
+            <div id="score8" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>9. qu'est-ce qui prouve que cheik amir est con ?</h2>
+            <form id="quizForm9">
+                               <label class="option"><input type="radio" name="reponse9" value="Carbone"> qu'il est un génie en tout</label>
+                <label class="option"><input type="radio" name="reponse9" value="Hydrogène"> le fait qu'il ait dit que pour apprendre il faut connaître l'anglais et ce n'est pas son cas</label>
+                <label class="option"><input type="radio" name="reponse9" value="Oxygène">qu'il peut réussir à faire tout ce qu'on fait</label>
+ 
+                <button type="button" onclick="verifierReponse('quizForm9', 'score9', 'Hydrogène')">Valider</button>
+            </form>
+            <div id="score9" class="message">Score : 0</div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <h2>10. comment décrire son niveau en informatique</h2>
+            <form id="quizForm10">
+                <label class="option"><input type="radio" name="reponse10" value="Victor Hugo"> frauduleux et trompeux </label>
+                <label class="option"><input type="radio" name="reponse10" value="Molière"> super élevé</label>
+                <label class="option"><input type="radio" name="reponse10" value="Zola"> absolument vénéré</label>
+                <button type="button" onclick="verifierReponse('quizForm10', 'score10', 'Victor Hugo')">Valider</button>
+            </form>
+            <div id="score10" class="message">Score : 0</div>
+        </div>
+    </div>
+<div data-aos="fade-down">
+    <button  onclick="verifierTotal()">Voir le total des points</button>
+    </div>
+    <div id="total-score">Score total : 0</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js">
+
+    </script>
+
+</body>
+  </html>
